@@ -11,8 +11,14 @@ respuesta = input("Estas pensando en algo real? ")
 if respuesta == "si":
     respuesta = input("Estas pensando en un animal? ")
     if respuesta == "si":
-        respuesta = input("Tu animal tiene 4 patas? ")
+        respuesta = input("Tu animal es un terrestre? ")
         if respuesta == "si":
-            respuesta = input("Tu animal es un mamifero? ")
+            respuesta = input("Tu animal tiene 4 patas? ")
             if respuesta == "si":
-                respuesta = input("Tu animal es un terrestre? ")
+                respuesta = input("Tu animal es un mamifero? ")
+                if respuesta == "si":
+                    respuesta = input("Tu animal es un felino? ")
+                    if respuesta == "si":
+                        print("Tu animal es un tigre")
+                    else:
+                        print("Tu animal es un perro")
