@@ -79,8 +79,51 @@ if respuesta == "si":
                 else:
                     print("Pensaste en una planta ornamental o medicinal.")
             else:
-                print("Pensaste en un hongo o bacteria.")
-
+                respuesta = input("¿Es una persona? (si/no): ").strip().lower()
+                if respuesta == "si":
+                    respuesta = input("¿Es un personaje histórico? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en un rey, presidente o científico.")
+                    else:
+                        respuesta = input("¿Es un personaje famoso? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en un actor, cantante o deportista.")
+                        else:
+                            respuesta = input("¿Es un profesionista? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                respuesta = input("¿Es de area fisico-matematicas? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un ingeniero, matematico, arquitecto o fisico.")
+                                else:
+                                    respuesta = input("¿Es de area de la salud? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en un doctor, enfermera o paramedico, psicologo.")
+                                    else:
+                                        respuesta = input("¿Es de area de humanidades? (si/no): ").strip().lower()
+                                        if respuesta == "si":
+                                            print("Pensaste en un filosofo, escritor o historiador.")
+                                        else:
+                                            respuesta = input("¿Es de area de social-administrativa? (si/no): ").strip().lower()
+                                            if respuesta == "si":
+                                                print("Pensaste en un abogado, administrador o contador.")
+                                            else:
+                                                respuesta = input("¿Es de area de artes? (si/no): ").strip().lower()
+                                                if respuesta == "si":
+                                                    print("Pensaste en un pintor, escultor o músico.")
+                                                else:
+                                                    respuesta = input("¿Es de area de educacion? (si/no): ").strip().lower()
+                                                    if respuesta == "si":
+                                                        print("Pensaste en un profesor, pedagogo.")
+                            else:
+                                respuesta = input("¿Se dedica a un oficio? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un carpintero, plomero o electricista.")
+                                else:
+                                    print("Pensaste en un campesino, pescador o minero.")                                                
+                else:
+                    respuesta = input("¿Es un hongo? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en un hongo comestible o venenoso.")
     else:
         respuesta = input("¿Es un objeto? (si/no): ").strip().lower()
 
