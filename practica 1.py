@@ -17,60 +17,111 @@ if respuesta == "si":
         respuesta = input("¿Es un animal? (si/no): ").strip().lower()
             
         if respuesta == "si":
-            respuesta = input("¿Es un mamifero? (si/no): ").strip().lower()
-            
+            respuesta = input("¿Es un vertebrado? (si/no): ").strip().lower()
             if respuesta == "si":
-                respuesta = input("¿Es carnivoro? (si/no): ").strip().lower()
-                
+                respuesta = input("¿Es un mamifero? (si/no): ").strip().lower()
                 if respuesta == "si":
-                    respuesta = input("¿Es un felino? (si/no): ").strip().lower()
+                    respuesta = input("¿Es un animal domestico? (si/no): ").strip().lower()
                     if respuesta == "si":
-                        respuesta == input("¿Es domestico? (si/no): ").strip().lower()
-                        if respuesta == "si":
-                            print("pensaste e un gato.")
-                        else:
-                            print("Pensaste en un leon/tigre")
+                        print("Pensaste en un perro, gato o conejo.")
                     else:
-                        respuesta = input("¿Es un oso? (si/no): ").strip().lower()
+                        respuesta = input("Pone huevos? (si/no): ").strip().lower()
                         if respuesta == "si":
-                            print("Pensaste en un oso")
+                            print("Pensaste en un ornitorrinco o equidna.")
                         else:
-                            print("Pensanste en un lobo/zorro")
-                            
-                else:
-                    respuesta = input("¿Es un animal grande? (si/no): ").strip().lower()
-                    if respuesta == "si":
-                        respuesta = input("¿Tiene trompa? (si/no): ").strip().lower()
-                        if respuesta == "si":
-                            print("Pensaste en un elefante")
-                        else:
-                            respuesta = input("Tiene cuernos? (si/no): ").strip().lower()
+                            respuesta = input("¿Es un marsupial? (si/no): ").strip().lower()
                             if respuesta == "si":
-                                print("Pensaste en un venado/alce")
+                                print("Pensaste en un canguro, koala o zarigüeya.")
                             else:
-                                print("Pensaste en un caballo o una vaca")
-                    else:
-                        print("Pesaste en un conejo/roedor")
-                        
-            else:
-                respuesta = input("Es un ave? (si/no): ").strip().lower()
-                if respuesta == "si":
-                    respuesta = input("Vuela? (si/no): ").strip().lower()
-                    if respuesta == "si":
-                        print("Pensaste en un aguila o un halcon. ")
-                    else:
-                        print("Pensaste en un pinguino o avestruz")
+                                respuesta = input("¿Es un animal omnivoro? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un oso, cerdo.")
+                                    respuesta = input("¿Es un animal carnivoro? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en un león, tigre o lobo.")
+                                    else:
+                                        respuesta = input("¿Es un animal herbívoro? (si/no): ").strip().lower()
+                                        if respuesta == "si":
+                                            print("Pensaste en un caballo, vaca o elefante.")
+                                        
                 else:
-                    respuesta = input("Es un respitl o anfibio? (si/no): ").strip().lower()
-                    if respuesta == "si":
-                        respuesta == input("Es venenoso? (si/no): ").strip().lower()
+                    respuesta = input("¿Es un ave? (si/no): ").strip().lower()
+                    if respuesta =="si":
+                        respuesta = input("¿Es un ave domestica? (si/no): ").strip().lower()
                         if respuesta == "si":
-                            print("Pensaste en una serpiente/rana venenosa.")
+                            print("Pensaste en un canario, gallina o pato.")
                         else:
-                            print("Pensaste en una tortuga/lagarto")
+                            respuesta = input("¿Puede volar? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                respuesta = input("¿Es nocturno? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un búho o lechuza.")
+                                else:
+                                    print("Pensaste en un águila, halcón o colibrí.")
+                            else:
+                                respuesta = input("¿Es un ave acuatica? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un pato, cisne o flamenco.")
+                                else:
+                                    print("Pensaste en un ave terrestre.")
+                                    respuesta = input("¿Es de lo hemisferios polo norte o sur? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en un pinguino o albatros.")
+                                    else:
+                                        print("Pensaste en un avestruz o emú.")
                     else:
-                        print("Pensaste en un pez/criatura marina")
-        else:
+                        respuesta = input("¿Es un reptil? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            respuesta = input("¿Es un reptil terrestre? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en una serpiente, lagartija o cocodrilo.")
+                            else:
+                                print("Pensaste en una tortuga o iguana.")
+                        else:
+                            respuesta = input("¿Es un anfibio? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en una rana o salamandra.")
+                            else:
+                                respuesta = input("¿Es un pez? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    respuesta = input("¿Es un pez de agua dulce? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en una trucha, carpa o bagre.")
+                                    else:
+                                        print("Pensaste en un pez de agua salada.")                    
+                    
+            else:
+                respuesta = input("¿Es un invertebrado? (si/no): ").strip().lower()
+                if respuesta == "si":
+                    respuesta = input("¿Es un insecto? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en una mariposa, abeja o escarabajo.")
+                    else:
+                        respuesta = input("¿Es un aracnido? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en una araña o escorpión.")
+                        else:
+                            respuesta = input("¿Es un molusco? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en un caracol o pulpo.")
+                            else:
+                                respuesta = input("¿Es un crustaceo? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un cangrejo o langosta.")
+                                else:
+                                    respuesta = input("¿Es un Miriápodos (ciempiés y milpiés)? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en un ciempiés o milpiés.")
+                                    else:
+                                        respuesta = input("¿Tiene simetria radial, como una estrella ? (si/no): ").strip().lower()
+                                        if respuesta == "si":
+                                            print("Pensaste en una estrella de mar o erizo de mar.")
+                                        else:
+                                            respuesta = input("¿Es un gusano? (si/no): ").strip().lower()
+                                            if respuesta == "si":
+                                                print("Pensaste en una lombriz o gusano de seda.")
+                                        
+        else:                                
             respuesta = input("¿Es una planta? (si/no): ").strip().lower()
             if respuesta == "si":
                 respuesta = input("¿Da frutos? (si/no): ").strip().lower()
