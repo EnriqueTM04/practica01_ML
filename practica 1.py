@@ -42,8 +42,7 @@ if respuesta == "si":
                                     else:
                                         respuesta = input("¿Es un animal herbívoro? (si/no): ").strip().lower()
                                         if respuesta == "si":
-                                            print("Pensaste en un caballo, vaca o elefante.")
-                                        
+                                            respuesta = input("¿Es un animal rumiante? (si/no): ").strip().lower()                                        
                 else:
                     respuesta = input("¿Es un ave? (si/no): ").strip().lower()
                     if respuesta =="si":
@@ -292,21 +291,38 @@ else:
                 if respuesta == "si":
                     respuesta = input("¿Es de la mitologia griega? (si/no): ").strip().lower()
                     if respuesta == "si":
-                        print("Pensaste en un minotauro, centauro o hidra.")
+                        respuesta = input("¿Es un dios o semidios? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en Zeus, Hades o Aquiles.")
+                        else:
+                            print("Pensaste en un centauro, minotauro o gorgona.")
                     else:
                         respuesta = input("¿Es de la mitologia nórdica? (si/no): ").strip().lower()
                         if respuesta == "si":
-                            print("Pensaste en un troll, elfo o valquiria.")
+                            respuesta = input("¿Es un dios o gigante? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en Thor, Odín o Loki.")
+                            else:
+                                print("Pensaste en un elfo, enano o troll.")
                         else:
                             respuesta = input("¿Es de la mitologia egipcia? (si/no): ").strip().lower()
                             if respuesta == "si":
-                                print("Pensaste en un dios o faraón.")
+                                respuesta = input("¿Es un dios o faraón? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en Ra, Anubis o Cleopatra.")
+                                else:
+                                    print("Pensaste en un escarabajo, serpiente o esfinge.")
                             else:
                                 respuesta = input("¿Es de la mitologia china? (si/no): ").strip().lower()
                                 if respuesta == "si":
-                                    print("Pensaste en un dragon o fénix.")
+                                    respuesta = input("¿Es un dios o dragón? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en Buda, Shenlong o Hotei.")
+                                    else:
+                                        print("Pensaste en un qilin, fénix o jiangshi.")
                                 else:
                                     print("Pensaste en un ser mitológico de otra cultura.")
+                                    
                 else:
                     print("Pensaste en un fantasma, aparicion.")
     else:
