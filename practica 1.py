@@ -187,10 +187,47 @@ if respuesta == "si":
                 if respuesta == "si":
                     print("Pensaste en Marte, Júpiter o la Tierra.")
                 else:
-                    print("Pensaste en una estrella, cometa o galaxia.")
-            else:
-                print("Pensaste en algo desconocido o abstracto.")
+                    respuesta = input("¿Es una estrella? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en el Sol o Sirio.")
+                    else:
+                        respuesta = input("¿Es un satélite? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en la Luna o un satélite artificial.")
+                        else:
+                            respuesta = input("¿Es un asteroide? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en un asteroide o cometa.")
+                            else:
+                                respuesta = input("¿Es un fenómeno astronómico? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un eclipse o lluvia de estrellas.")
 
+            else:
+                respuesta = input("¿Es un concepto? (si/no): ").strip().lower()
+                if respuesta == "si":
+                    respuesta = input("¿Es una emocion? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en amor, odio o tristeza.")
+                    else:
+                        respuesta = input("¿Es un valor? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en justicia, libertad o respeto.")
+                        else:
+                            respuesta = input("¿Es un fenómeno natural? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en un arcoíris, tormenta o terremoto.")
+                            else:
+                                respuesta = input("¿Es un concepto matemático? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un número, operación o figura geométrica.")
+                                else:
+                                    respuesta = input("¿Es un concepto científico? (si/no): ").strip().lower()
+                                    if respuesta == "si":
+                                        print("Pensaste en una teoría, ley o experimento.")
+                                    else:
+                                        print("Pensaste en un concepto filosófico o abstracto.")
+                    
 else:
     respuesta = input("¿Es un concepto imaginario? (si/no): ").strip().lower()
     if respuesta == "si":
@@ -220,15 +257,7 @@ else:
                                 else:
                                     print("Pensaste en un ser mitológico de otra cultura.")
                 else:
-                    respuesta = input("¿Es un personaje de cuento o libro? (si/no): ").strip().lower()
-                    if respuesta == "si":
-                        print("Pensaste en Cenicienta, Peter Pan o Sherlock Holmes.")
-                    else:
-                        respuesta = input("¿Es un personaje de videojuego? (si/no): ").strip().lower()
-                        if respuesta == "si":
-                            print("Pensaste en Mario, Sonic o Lara Croft.")
-                        else:
-                            print("Pensaste en un personaje de película o serie.")
+                    print("Pensaste en un fantasma, aparicion.")
     else:
         respuesta = input("¿Es un mundo ficticio? (si/no): ").strip().lower()
         if respuesta == "si":
