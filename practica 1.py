@@ -1,10 +1,10 @@
-"""Integrantes del eqipo:
-    - ...
+"""
+    Practica 1: 20Q
+
+    Integrantes del eqipo:
+    - Agreda Iparraguirre Rodrigo Imanol
     - Pimentel Gonzalez Ricardo Antonio
     - Taboada Montiel Enrique
-    - Agreda Iparraguirre Rodrigo Imanol
-    
-    Practica 1: 20Q
     
 """
 print("Piensa en algo, y yo tratare de adivinarlo con preguntas de si o no")
