@@ -200,13 +200,35 @@ else:
             if respuesta == "si":
                 print("Pensaste en Batman, Superman o Spider-Man.")
             else:
-                print("Pensaste en un personaje de una película, serie o libro.")
-        else:
-            respuesta = input("¿Es una criatura mitológica? (si/no): ").strip().lower()
-            if respuesta == "si":
-                print("Pensaste en un dragón, unicornio o sirena.")
-            else:
-                print("Pensaste en un fantasma, demonio o entidad imaginaria.")
+                respuesta = input("¿Es una criatura mitologica? (si/no): ").strip().lower()
+                if respuesta == "si":
+                    respuesta = input("¿Es de la mitologia griega? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en un minotauro, centauro o hidra.")
+                    else:
+                        respuesta = input("¿Es de la mitologia nórdica? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en un troll, elfo o valquiria.")
+                        else:
+                            respuesta = input("¿Es de la mitologia egipcia? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en un dios o faraón.")
+                            else:
+                                respuesta = input("¿Es de la mitologia china? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en un dragon o fénix.")
+                                else:
+                                    print("Pensaste en un ser mitológico de otra cultura.")
+                else:
+                    respuesta = input("¿Es un personaje de cuento o libro? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en Cenicienta, Peter Pan o Sherlock Holmes.")
+                    else:
+                        respuesta = input("¿Es un personaje de videojuego? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en Mario, Sonic o Lara Croft.")
+                        else:
+                            print("Pensaste en un personaje de película o serie.")
     else:
         respuesta = input("¿Es un mundo ficticio? (si/no): ").strip().lower()
         if respuesta == "si":
