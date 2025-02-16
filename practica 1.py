@@ -141,9 +141,25 @@ if respuesta == "si":
             if respuesta == "si":
                 respuesta = input("¿Da frutos? (si/no): ").strip().lower()
                 if respuesta == "si":
-                    print("Pensaste en un árbol frutal o una vid.")
+                    print("Pensaste en un árbol frutal o arbusto.")
                 else:
-                    print("Pensaste en una planta ornamental o medicinal.")
+                    respuesta = input("¿Es una planta de interior? (si/no): ").strip().lower()
+                    if respuesta == "si":
+                        print("Pensaste en un cactus, helecho o palma.")
+                    else:
+                        respuesta = input("¿Es una planta de exterior? (si/no): ").strip().lower()
+                        if respuesta == "si":
+                            print("Pensaste en un rosal, césped o arbusto ornamental.")
+                        else:
+                            respuesta = input("¿Es una planta acuática? (si/no): ").strip().lower()
+                            if respuesta == "si":
+                                print("Pensaste en un loto, jacinto de agua o alga.")
+                            else:
+                                respuesta = input("¿Es una planta carnívora? (si/no): ").strip().lower()
+                                if respuesta == "si":
+                                    print("Pensaste en una Venus atrapamoscas, planta cobra o planta araña.")
+                                else:
+                                    print("Pensaste en otro tipo de planta como un helecho, cactus o orquídea.")
             else:
                 respuesta = input("¿Es una persona? (si/no): ").strip().lower()
                 if respuesta == "si":
