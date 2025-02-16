@@ -7,6 +7,12 @@
     - Taboada Montiel Enrique
     
 """
+print("Practica 1: 20Q")
+print("Integrantes del equipo:")
+print("Agreda Iparraguirre Rodrigo Imanol")
+print("Pimentel Gonzalez Ricardo Antonio")
+print("Taboada Montiel Enrique\n")
+
 print("Piensa en algo, y yo tratare de adivinarlo con preguntas de si o no")
 
 respuesta = input("Estas pensando en algo real?  (si/no): ").strip().lower()
