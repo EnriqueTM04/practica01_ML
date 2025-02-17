@@ -447,9 +447,13 @@ if respuesta == "si":
                                                                 if respuesta == "si":
                                                                     print("Pensaste en Apple, Microsoft o Google.")
                                                                 else:
-                                                                    respuesta = input("¿Es una marca de ropa o accesorios? (si/no): ").strip().lower()
+                                                                    respuesta = input("¿Estas pensando en ropa? (si/no): ").strip().lower()
                                                                     if respuesta == "si":
-                                                                        print("Pensaste en Nike, Adidas o Gucci.")
+                                                                        respuesta = input("¿Es una marca de ropa? (si/no): ").strip().lower()
+                                                                        if respuesta == "si":
+                                                                            print("Pensaste en Nike, Adidas o Zara.")
+                                                                        else:
+                                                                            print("Pensaste en una prenda de vestir como camisa, pantalón o zapato.")
                                                                     else:
                                                                         respuesta = input("¿Es una marca de alimentos o bebidas? (si/no): ").strip().lower()
                                                                         if respuesta == "si":
